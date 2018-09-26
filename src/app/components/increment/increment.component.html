@@ -1,0 +1,12 @@
+<h3 class="card-text">{{title}}</h3>
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-danger" type="button" (click)="onChangeVal(-5)"><i
+      class="mdi mdi-minus"></i></button>
+  </span>
+  <input #txtPercent type="number" class="form-control" name="percent" [(ngModel)]="percent" (ngModelChange)="onChanges($event)" min="0" max="100">
+  <span class="input-group-btn">
+    <button class="btn btn-success" type="button" (click)="onChangeVal(5)"><i
+      class="mdi mdi-plus"></i></button>
+  </span>
+</div>

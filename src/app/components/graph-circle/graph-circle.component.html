@@ -1,0 +1,9 @@
+<div #chart name="chart" style="display: block">
+  <h3 class="title text-center">{{charTitle}}</h3>
+  <canvas baseChart
+          [data]="charData"
+          [labels]="charLabels"
+          [chartType]="charType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>

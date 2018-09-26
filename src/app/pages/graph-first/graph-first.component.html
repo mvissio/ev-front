@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-graph-circle
+          [charTitle]="graficos.grafico1.leyenda"
+          [charData]="graficos.grafico1.data"
+          [charType]="graficos.grafico1.type"
+          [charLabels]="graficos.grafico1.labels"
+          (onClick)="onClick($event)"
+          (onHover)="onHover($event)">
+        </app-graph-circle>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-graph-circle
+          [charTitle]="graficos.grafico2.leyenda"
+          [charData]="graficos.grafico2.data"
+          [charType]="graficos.grafico2.type"
+          [charLabels]="graficos.grafico2.labels"
+          (onClick)="onClick($event)"
+          (onHover)="onHover($event)">
+        </app-graph-circle>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-graph-circle
+          [charTitle]="graficos.grafico3.leyenda"
+          [charData]="graficos.grafico3.data"
+          [charType]="graficos.grafico3.type"
+          [charLabels]="graficos.grafico3.labels"
+          (onClick)="onClick($event)"
+          (onHover)="onHover($event)">
+        </app-graph-circle>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-graph-circle
+          [charTitle]="graficos.grafico4.leyenda"
+          [charData]="graficos.grafico4.data"
+          [charType]="graficos.grafico4.type"
+          [charLabels]="graficos.grafico4.labels"
+          (onClick)="onClick($event)"
+          (onHover)="onHover($event)">
+        </app-graph-circle>
+      </div>
+    </div>
+  </div>
+</div>
+
